@@ -13,7 +13,7 @@ const SavedBooks = () => {
 
   const [removeBook] = useMutation( REMOVE_BOOK );
 
-  
+  // function that deletes the selected book from the Mongo DB
   const handleDeleteBook = async (bookId) => {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
 
